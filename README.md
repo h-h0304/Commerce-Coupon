@@ -42,10 +42,9 @@
 
 6. 운영/운용 관련 기능
 
-   * CI/CD 파이프라인 구축 (GitHub Actions → Docker → AWS 배포)
+   * CI/CD 파이프라인 구축 (GitHub Actions → Docker → NCP 배포)
    * 모니터링 도입 (Spring Actuator + Prometheus + Grafana)
    * 장애 대응 알림 시스템 구축 (Slack Webhook 연동)
-   * 시스템 헬스체크 API 제공 (/actuator/health)
 
 7. 테스트
  
