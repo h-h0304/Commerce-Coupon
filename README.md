@@ -40,14 +40,3 @@
    * 쿠폰 유효기간, 수량 제한 설정 기능
    * 회원 목록 조회 기능
 
-6. 운영/운용 관련 기능
-
-   * CI/CD 파이프라인 구축 (GitHub Actions → Docker → NCP 배포)
-   * 모니터링 도입 (Spring Actuator + Prometheus + Grafana)
-   * 장애 대응 알림 시스템 구축 (Slack Webhook 연동)
-
-7. 테스트
- 
-   * 주요 서비스 로직 단위 테스트 작성
-   * Controller 레벨 통합 테스트 작성
-   * Redis 기반 쿠폰 선착순 발급 및 장바구니 캐시 부하 테스트 작성
