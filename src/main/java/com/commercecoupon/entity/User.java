@@ -1,3 +1,4 @@
+// User.java 업데이트 버전 (Cart, Order 관계 추가)
 package com.commercecoupon.entity;
 
 import com.commercecoupon.enums.Role;
@@ -40,6 +41,14 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Coupon> coupons;
+
+    // 🆕 Cart 관계 추가
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Cart cart;
+
+    // 🆕 Order 관계 추가
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Order> orders;
 
     @CreatedDate
     private LocalDateTime createdAt;
